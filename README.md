@@ -21,6 +21,7 @@ This is a little script we've extracted from http://omgig.com
       console.log("WebM: " + webmUrl);
       var mp4Url = video.getSource("video/mp4", "medium");
       console.log("MP4: " + mp4Url);
+
+      $("<video controls='controls'/>").attr("src", webmUrl).appendTo("body");
     });
 
-    
