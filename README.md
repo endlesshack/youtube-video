@@ -10,7 +10,6 @@ This is a little script we've extracted from http://omgig.com
 ## Dependencies
 
 - jQuery
-- [URI.js](https://github.com/jwagener/uri.js)
 
 ## Usage
 
