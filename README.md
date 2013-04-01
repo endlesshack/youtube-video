@@ -16,11 +16,11 @@ This is a little script we've extracted from http://omgig.com
     var youtubeId = "Q4-MnX5PfO8";
     YoutubeVideo(youtubeId, function(video){
       console.log(video.title);
-      var webmUrl = video.getSource("video/webm", "medium");
-      console.log("WebM: " + webmUrl);
-      var mp4Url = video.getSource("video/mp4", "medium");
-      console.log("MP4: " + mp4Url);
+      var webm = video.getSource("video/webm", "medium");
+      console.log("WebM: " + webm.url);
+      var mp4 = video.getSource("video/mp4", "medium");
+      console.log("MP4: " + mp4.url);
 
-      $("<video controls='controls'/>").attr("src", webmUrl).appendTo("body");
+      $("<video controls='controls'/>").attr("src", webm.url).appendTo("body");
     });
 
